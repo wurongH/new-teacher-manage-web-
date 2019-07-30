@@ -1,0 +1,57 @@
+.guide-view{
+
+  ul{
+    li{
+      min-height: 40px;
+      height: auto;
+      font-size: 14px;
+      color: #333;
+
+
+      .info{
+        height: 40px;
+        line-height: 40px;
+        font-size: 0;
+
+        > div{
+          display: inline-block;
+          padding-right: 65px;
+        }
+        span{
+          height: 100%;
+          padding-right: 56px;
+          float: left;
+          font-size: 14px;
+
+          &:last-of-type{
+            padding-right: 0;
+          }
+        }
+        i{
+          cursor: pointer;
+          width: 30px;
+          height: 100%;
+          position: absolute;
+          top: 0;
+        }
+        .i-del{
+          background: url('./images/del2.png') center center no-repeat;
+          right: 0;
+        }
+        .i-edit{
+          background: url('./images/edit.png') center center no-repeat;
+          right: 30px;
+        }
+      }
+      .content{
+        line-height: 30px;
+        text-align: justify;
+      }
+    }
+  }
+  .no-guide{
+    line-height: 40px;
+    font-size: 14px;
+    color: #cacaca;
+  }
+}

@@ -1,0 +1,108 @@
+.item{
+  height: 36px;
+  line-height: 36px;
+  margin-bottom: 20px;
+
+  .view{
+    max-width: 550px;
+  }
+  .w30, .w50, .w70{
+    float: left;
+  }
+  .w30{
+    width: 30%;
+  }
+  .w50{
+    width: 50%;
+  }
+  .w70{
+    width: 70%;
+  }
+  &.h-auto{
+    height: auto;
+  }
+  .form-item{
+    width: 100%;
+    display: flex;
+
+    .label{
+      width: 170px;
+      text-align: right;
+      padding-right: 10px;
+      font-size: 14px;
+      color: #999;
+
+      &.modify, em{
+        color: #e83a31;
+      }
+      &.w{
+        width: 44px;
+        padding-right: 0;
+        text-align: center;
+      }
+    }
+    > div:not(.service-time){
+      flex: 1;
+
+      &.clear{
+        .i-del, span, .el-select, .el-input{
+          float: left;
+        }
+        .el-select{
+          width: 120px;
+        }
+        .el-input{
+          width: 150px;
+        }
+        .el-button{
+          width: 90px;
+          margin-left: 15px;
+        }
+        span{
+          width: 100px;
+          text-align: center;
+          padding: 0;
+        }
+        .i-del{
+          cursor: pointer;
+          background: url('./images/del2.png') center center no-repeat;
+          width: 36px;
+          height: 36px;
+          margin-left: 42px;
+        }
+      }
+    }
+  }
+}
+
+.form-component{
+  padding: 20px;
+  border-bottom: 1px dashed #e1e1e1;
+
+}
+
+.header-add{
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  color: #999;
+
+  .i-add{
+    margin-left: 5px;
+    color: #0f88eb;
+    cursor: pointer;
+    background: url('./images/add.png') no-repeat 0 center;
+    padding-left: 20px;
+  }
+}
+
+.add-edit-dialog{
+  padding-top: 30px;
+}
+.modify{
+  color: #e83a31;
+}
+
+.v-course, .v-guide, .v-review, .v-resume{
+  padding-left: 100px;
+}
